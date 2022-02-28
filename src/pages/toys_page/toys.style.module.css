@@ -248,4 +248,8 @@
   .top_section__item {
     max-width: 80%;
   }
+  .top_section__item {
+    max-width: 95%;
+    height: auto;
+  }
 }

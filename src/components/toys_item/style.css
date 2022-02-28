@@ -15,14 +15,14 @@
 
   display: grid;
   grid-template-areas:
-    "title title title"
-    "title title title"
-    "image text text"
-    "image text text"
-    "image text text"
-    "image text text"
-    "tag text text"
-    "tag text text";
+    'title title title'
+    'title title title'
+    'image text text'
+    'image text text'
+    'image text text'
+    'image text text'
+    'tag text text'
+    'tag text text';
   grid-template-columns: 33% 33% 33%;
   color: #fff;
 }
@@ -62,7 +62,7 @@
 
 .item__tag::before,
 .item__tag::after {
-  content: "";
+  content: '';
   position: absolute;
   height: 0;
   width: 0;
@@ -152,5 +152,13 @@
     width: 80%;
     max-width: 100%;
   }
-  
+}
+
+@media (max-width: 400px) {
+  .section__item-inner {
+    height: auto;
+  }
+  .section__item {
+    width: 95%;
+  }
 }
