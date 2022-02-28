@@ -1,0 +1,21 @@
+/*.garland {
+  position: absolute;
+  border-radius: 50%;
+  list-style-type: none;
+  width: 120px;
+  height: 120px;
+}
+
+.garland__item {
+  width: 8px;
+  height: 8px;
+}
+*/
+
+.garland__wrapper {
+  width: 100%;
+  height: calc(100vh - 125px);
+  display: none;
+  position: relative;
+  pointer-events: none;
+}
