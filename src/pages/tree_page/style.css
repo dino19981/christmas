@@ -2,7 +2,8 @@
   display: flex;
 }
 
-.section-tree__item, .section-tree__item-right {
+.section-tree__item,
+.section-tree__item-right {
   height: calc(100vh - 125px);
   width: 20%;
   background: transparent;
@@ -67,13 +68,18 @@
   display: none;
 }
 
-.mobile__left-options, .mobile__left-toys {
+.mobile__left-options,
+.mobile__left-toys {
   display: none;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   padding: 5px 18px;
-  background: radial-gradient( 118.88% 606.86% at 0% 0%, rgba(255, 255, 255, 0.4) 0%, rgba(157, 243, 255, 0.6) 100% );
+  background: radial-gradient(
+    118.88% 606.86% at 0% 0%,
+    rgba(255, 255, 255, 0.4) 0%,
+    rgba(157, 243, 255, 0.6) 100%
+  );
   -webkit-backdrop-filter: blur(31px);
   backdrop-filter: blur(31px);
   border: 1px solid #00aadb;
@@ -88,22 +94,24 @@
   display: block;
 }
 
-.mobile__item.show__item, .mobile__item.show__item {
+.mobile__item.show__item,
+.mobile__item.show__item {
   display: block;
 }
 
-@media (max-width:800px) {
+@media (max-width: 800px) {
   .section-tree {
     flex-direction: column;
   }
-  .section-tree__item, .section-tree__item-right {
+  .section-tree__item,
+  .section-tree__item-right {
     height: auto;
     width: 100%;
   }
   .section-tree__options-inner {
     display: flex;
     padding: 5px 10px;
-    justify-content: space-around
+    justify-content: space-around;
   }
   .button__clear-localstorage {
     display: none;
@@ -132,11 +140,12 @@
   .mobile__item {
     display: none;
   }
-  .mobile__left-options, .mobile__left-toys {
+  .mobile__left-options,
+  .mobile__left-toys {
     display: block;
     position: absolute;
-    top : 10px;
-    left : 10px;
+    top: 10px;
+    left: 10px;
     z-index: 100;
   }
   .mobile__left-toys {
@@ -166,7 +175,8 @@
   .section-tree__interactive-button:nth-child(2) {
     margin-left: 20px;
   }
-  .button-sound.section-tree__interactive-button, .button-snowfall.section-tree__interactive-button {
+  .button-sound.section-tree__interactive-button,
+  .button-snowfall.section-tree__interactive-button {
     width: 50px;
     height: 50px;
     background-repeat: no-repeat;
@@ -185,5 +195,12 @@
   }
   .tree {
     width: 400px;
+  }
+}
+
+@media (max-width: 400px) {
+  .tree {
+    width: 370px;
+    height: 71vh;
   }
 }
